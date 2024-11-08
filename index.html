@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/portfolio_favicon.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Vignesh Srinivasan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Vignesh Srinivasan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li>
+            <a href="#certifications" onclick="toggleMenu()">Certifications</a>
+          </li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile_pic.png"
+          alt="Vignesh Srinivasan profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Vignesh Srinivasan</h1>
+        <p class="section__text__p2">Aspiring Data Analyst / Business Analyst</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Vignesh_Srinivasan_DA_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/vignesh-srinivasan-da/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Vignesh-Srinivasan-27'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Process Associate</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Com Bachelors Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <ul>
+              <li>
+                <p>
+                  <span>I'm Vignesh Srinivasan,</span> an aspiring Data Analyst
+                  with a passion for turning data into insights. I’m skilled in
+                  Excel, Power BI, SQL, and Python, which I’ve used to work on
+                  several business projects featured in my portfolio.
+                </p>
+              </li>
+
+              <br />
+
+              <li>
+                <p>
+                  Although my current role is as a Process Associate at First
+                  American India Pvt. Ltd., I’ve discovered my true strength
+                  lies in data analysis. I enjoy digging into data to find
+                  trends, solve problems, and make informed decisions.
+                </p>
+              </li>
+
+              <br />
+
+              <li>
+                <p>
+                  I’m excited to take my next step into a full-time Data Analyst
+                  role and apply what I’ve learned to make a real impact.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-grid-container">
+        <div class="skill-box">
+          <img src="./assets/excel.png" alt="Excel" class="icon" />
+          <h3>Excel</h3>
+        </div>
+        <div class="skill-box">
+          <img src="./assets/power-bi.png" alt="Power BI" class="icon" />
+          <h3>Power BI</h3>
+        </div>
+        <div class="skill-box">
+          <img src="./assets/python.png" alt="Python" class="icon" />
+          <h3>Python</h3>
+        </div>
+        <div class="skill-box">
+          <img src="./assets/sql-server.png" alt="SQL" class="icon" />
+          <h3>SQL</h3>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="projects-grid-container">
+        <div class="project-box">
+          <img
+            src="./assets/Business Insights 360.jpg"
+            alt="Project 1"
+            class="project-img"
+          />
+          <h2 class="project-title">AtliQ Hardware - Business Insights 360</h2>
+          <div class="btn-container">
+            <button
+              class="btn project-btn"
+              onclick="location.href='https://github.com/Vignesh-Srinivasan-27/Business-Insights-360'"
+            >
+              Github
+            </button>
+            <button
+              class="btn project-btn"
+              onclick="location.href='https://app.powerbi.com/groups/me/reports/28219749-de47-4955-9f47-5e01d3b32f74/51ce06bc0a896020ea10?experience=power-bi'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="project-box">
+          <img
+            src="./assets/sales_insights.png"
+            alt="Sales and Finance Analytics"
+            class="project-img"
+          />
+          <h2 class="project-title">Sales and Finance Analytics</h2>
+          <div class="btn-container">
+            <button
+              class="btn project-btn"
+              onclick="location.href='https://github.com/Vignesh-Srinivasan-27/Sales_and_Finance_Analytics'"
+            >
+              Github
+            </button>
+            <button
+              class="btn project-btn"
+              onclick="location.href='https://github.com/Vignesh-Srinivasan-27/Sales_and_Finance_Analytics'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="certifications">
+      <p class="section__text__p1">Certifications</p>
+      <h1 class="title">My Certifications</h1>
+      <br />
+      <div class="certifications-container">
+        <div class="certification-card">
+          <img
+            src="./assets/Google_DA_Professional_Certification.jpg"
+            alt="Certification 1"
+            class="certification-img"
+          />
+          <h2 class="certification-title">
+            Google Data Analytics Professional Certification
+          </h2>
+          <p class="certification-body">
+            Issued by: Coursera <br />
+            Date: December 2023
+          </p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.coursera.org/account/accomplishments/professional-cert/SQY2CJZ739TU')"
+            >
+              View Certificate
+            </button>
+          </div>
+        </div>
+        <div class="certification-card">
+          <img
+            src="./assets/Excel_Codebasis.jpg"
+            alt="Certification 2"
+            class="certification-img"
+          />
+          <h2 class="certification-title">
+            Excel: Mother of Business Intelligence
+          </h2>
+          <p class="certification-body">
+            Issued by: Code Basics <br />
+            Date: October 2023
+          </p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://codebasics.io/certificate/CB-51-124451')"
+            >
+              View Certificate
+            </button>
+          </div>
+        </div>
+        <div class="certification-card">
+          <img
+            src="./assets/Power_BI_Codebasis.jpg"
+            alt="Certification 2"
+            class="certification-img"
+          />
+          <h2 class="certification-title">
+            Get Job Ready: Power BI Data Analytics for All Levels 2.0
+          </h2>
+          <p class="certification-body">
+            Issued by: Code Basics <br />
+            Date: February 2024
+          </p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://codebasics.io/certificate/CB-49-124451')"
+            >
+              View Certificate
+            </button>
+          </div>
+        </div>
+        <!-- Add more certification cards as needed -->
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:examplemail@gmail.com"
+              >vigneshsrinivasan64@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/vignesh-srinivasan-da/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Vignesh Srinivasan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
